@@ -1,0 +1,78 @@
+#outerWrapper {
+	position: absolute;
+	left: 80px;
+	top: 100px;
+	width: 800px;
+	height: 520px;	
+	// background: rgba(255, 255, 255, 0.35);
+}
+#itemsWrapper {
+	position: absolute;
+	left: 00px;
+	top: 000px;
+	width: 400px;
+	height: 520px;
+	border: 1px solid #444;
+	border-right-width: 0;
+	background: rgba(255, 255, 255, 0.35);
+}
+#dropAreasContainer {
+	position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 400px;
+    height: 520px;	
+}
+#dropAreaTop {
+	position: absolute;
+	left: 0px;
+	top: 000px;
+	width: 338px;
+	height: 260px;
+	background: rgba(255, 255, 255, 0.35);
+	border: 1px solid #444;
+	overflow: hidden;
+}
+#dropAreaBottom {
+	position: absolute;
+	left: 0px;
+	top: 260px;
+	width: 338px;
+	height: 260px;
+	background: rgba(255, 255, 255, 0.35);	
+	border: 1px solid #444;
+	border-bottom-width: 0;
+	overflow: hidden;
+	transform: scaleY(-1);
+}
+#buttonNext {
+	position: absolute;
+   left: 910px;
+   top: 540px;
+	width: 80px;
+	height: 80px;
+	border: 4px solid #444;
+	background: #30e068;
+	border-radius: 50%;
+	transform: translate(0, 0);
+	transition: transform 1s 0.5s;
+}
+main.active #buttonNext {
+	transform: translate(0px, 160px);
+	transition: transform 1s 0s;
+}
+#buttonNext:hover {
+    background: #37f971;
+}
+#buttonNext:after {
+    content: '';
+    position: absolute;
+    left: 23px;
+    top: 14px;
+    height: 0%;
+    width: 0%;
+    border-left: 36px solid #fff;
+    border-right: 16px solid transparent;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+}

@@ -1,0 +1,377 @@
+$transparentWhite: rgba(255, 255, 255, 0.35);
+$width: 400px;
+$height: 260px;
+
+#circularCointainer {
+  position: absolute;
+  left: 155px;
+  top: 50px;
+  width: 590px;
+  height: 590px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  background: $transparentWhite;
+  // background-image: url('../images/tool-9.png');
+}
+#circularCointainer > [class^='container'] {
+	visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	cursor: auto;
+}
+#circularCointainer [class^='container'].active {
+	visibility: visible;
+}
+
+
+
+
+
+
+
+#circularCointainer [class^='container-3-'] {
+	width: $width*0.69;
+	height: $height*0.69;
+	position: absolute;
+	overflow: hidden;
+	&:first-child {
+		background: gold;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: 33px;
+	}
+	&:nth-child(2) {
+    left: 303px;
+    top: 288px;
+		transform: rotate(120deg);
+		background: orange;
+	}
+	&:nth-child(3) {
+    left: 10px;
+    top: 288px;
+		transform: rotate(240deg);
+		background: crimson;
+	}
+}
+#circularCointainer [class^='container-'] .droppable--result {
+	width: 25%;
+	height: 38.5%;
+}
+
+#circularCointainer [class^='container-'] #dropAreaTop,
+#circularCointainer [class^='container-'] #dropAreaBottom {
+	border: none;
+	background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#circularCointainer [class^='container-4-'] {
+	width: $width*0.57;
+	height: $height*0.57;
+	position: absolute;
+	overflow: hidden;
+	&:first-child {
+		background: gold;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: 23px;
+	}
+	&:nth-child(2) {
+    left: 374px;
+    top: 218px;
+		transform: rotate(90deg);
+		background: orange;
+	}
+	&:nth-child(3) {
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 23px;
+		transform: rotate(180deg);
+		background: crimson;
+	}
+	&:nth-child(4) {
+		left: -17px;
+		top: 218px;
+		transform: rotate(270deg);
+		background: firebrick;
+	}	
+}
+#circularCointainer [class^='container-5-'] {
+	width: $width*0.505;
+	height: $height*0.505;
+	position: absolute;
+	overflow: hidden;
+	&:first-child {
+		background: powderblue;
+	    left: 313px;
+	    top: 59px;
+		transform: rotate(36deg);
+	}
+	&:nth-child(2) {
+		left: 387px;
+    	top: 291px;
+		transform: rotate(108deg);
+		background: skyblue;
+	}
+	&:nth-child(3) {
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 20px;
+		transform: rotate(180deg);
+		background: deepskyblue;
+	}
+	&:nth-child(4) {
+	    left: -5px;
+	    top: 291px;
+		transform: rotate(252deg);
+		background: dodgerblue;
+	}
+	&:nth-child(5) {
+	   left: 70px;
+	   top: 59px;
+		transform: rotate(324deg);
+		background: steelblue;
+	}	
+}
+
+#circularCointainer [class^='container-6-'] {
+	width: $width*0.435;
+	height: $height*0.435;
+	position: absolute;
+	overflow: hidden;
+	&:first-child {
+		background: powderblue;
+    left: 208px;
+    top: 31px;
+		transform: rotate(0deg);
+	}
+	&:nth-child(2) {
+		left: 386px;
+		top: 135px;
+		transform: rotate(60deg);
+		background: skyblue;
+	}
+	&:nth-child(3) {
+		left: 386px;
+		top: 341px;
+		transform: rotate(120deg);
+		background: deepskyblue;
+	}
+	&:nth-child(4) {
+		left: 207px;
+		top: 445px;
+		transform: rotate(180deg);
+		background: dodgerblue;
+	}
+	&:nth-child(5) {
+		left: 29px;
+		top: 342px;
+		transform: rotate(240deg);
+		background: steelblue;
+	}	
+	&:nth-child(6) {
+		left: 28px;
+		top: 134px;
+		transform: rotate(300deg);
+		background: navy;
+	}		
+}
+
+#circularCointainer [class^='container-7-'] {
+	width: $width*0.395;
+	height: $height*0.395;
+	position: absolute;
+	overflow: hidden;
+	&:first-child {
+		left: 215px;
+    top: 468px;
+		transform: rotate(180deg);
+		background: lightsalmon;
+	}
+	&:nth-child(2) {
+    left: 47px;
+    top: 388px;
+		transform: rotate(231.4deg);
+		background: salmon;
+	}
+	&:nth-child(3) {
+    left: 4px;
+    top: 202px;
+		transform: rotate(282.9deg);
+		background: darksalmon;
+	}
+	&:nth-child(4) {
+ 		left: 122px;
+    top: 56px;
+		transform: rotate(334.3deg);
+		background: lightcoral;
+	}
+	&:nth-child(5) {
+    left: 310px;
+    top: 57px;
+		transform: rotate(25.8deg);
+		background: indianred;
+	}	
+	&:nth-child(6) {
+		left: 426px;
+    top: 204px;
+		transform: rotate(77.2deg);
+		background: crimson;
+	}		
+	&:nth-child(7) {
+ 		left: 384px;
+    top: 386px;
+		transform: rotate(128.6deg);
+		background: firebrick;
+	}	
+}
+
+#circularCointainer [class^='container-8-'] {
+	width: $width*0.375;
+	height: $height*0.375;
+	position: absolute;
+	overflow: hidden;
+	&:first-child {
+		left: 219px;
+    top: 15px;
+		transform: rotate(0deg);
+		background: lightsalmon;
+	}
+	&:nth-child(2) {
+    left: 383px;
+    top: 83px;
+		transform: rotate(1*45deg);
+		background: salmon;
+	}
+	&:nth-child(3) {
+		left: 448px;
+    top: 245px;
+		transform: rotate(2*45deg);
+		background: darksalmon;
+	}
+	&:nth-child(4) {
+    left: 382px;
+    top: 408px;
+		transform: rotate(3*45deg);
+		background: lightcoral;
+	}
+	&:nth-child(5) {
+    left: 219px;
+    top: 475px;
+		transform: rotate(4*45deg);
+		background: indianred;
+	}	
+	&:nth-child(6) {
+		left: 58px;
+    top: 409px;
+		transform: rotate(5*45deg);
+		background: crimson;
+	}		
+	&:nth-child(7) {
+    left: -10px;
+    top: 245px;
+		transform: rotate(6*45deg);
+		background: firebrick;
+	}
+	&:nth-child(8) {
+    left: 57px;
+    top: 83px;
+		transform: rotate(7*45deg);
+		background: darkred;
+	}	
+}
+
+#circularCointainer [class^='container-9-'] {
+	width: $width*0.3375;
+	height: $height*0.3375;
+	position: absolute;
+	overflow: hidden;
+	&:first-child {
+    left: 307px;
+    top: 39px;
+		transform: rotate(20deg);
+		background: lightsalmon;
+	}
+	&:nth-child(2) {
+    left: 426px;
+    top: 142px;
+		transform: rotate(60deg);
+		background: salmon;
+	}
+	&:nth-child(3) {
+    left: 452px;
+    top: 297px;
+		transform: rotate(100deg);
+		background: darksalmon;
+	}
+	&:nth-child(4) {
+    left: 374px;
+    top: 433px;
+		transform: rotate(140deg);
+		background: lightcoral;
+	}
+	&:nth-child(5) {
+    left: 225px;
+    top: 485px;
+		transform: rotate(180deg);
+		background: indianred;
+	}	
+	&:nth-child(6) {
+    left: 78px;
+    top: 432px;
+		transform: rotate(220deg);
+		background: crimson;
+	}		
+	&:nth-child(7) {
+    left: -1px;
+    top: 296px;
+		transform: rotate(260deg);
+		background: firebrick;
+	}
+	&:nth-child(8) {
+    left: 27px;
+    top: 140px;
+		transform: rotate(300deg);
+		background: darkred;
+	}
+	&:nth-child(9) {
+    left: 148px;
+    top: 39px;
+		transform: rotate(340deg);
+		background: mediumvioletred;
+	}	
+}
+
+#circularCointainer [class^='container-'] {
+	background: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+

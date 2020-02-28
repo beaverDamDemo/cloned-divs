@@ -1,0 +1,52 @@
+main {
+	height: 100%;
+	width: 200%;
+	background-image: url('../images/background.jpg');
+	// background-size: 200% 100%;
+	transform: translateX(0%);
+	transition: transform 1.25s;
+}
+main.active {
+	transform: translateX(-50%);
+}
+section#workbench {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+}
+section#result {
+	position: absolute;
+	left: 50%;
+	top: 0;	
+	width: 50%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+// temporary content
+// #wrapper {
+// 	width: 2048px;
+// }
+// main {
+// 	overflow: visible;
+// }
+// section#workbench, section#result {
+// 	width: 1024px;
+// }
+// section#result {
+// 	left: 18%;
+// 	&::after {
+// 		content: 'temporary';
+// 		position: relative;
+// 		top: 50px;
+// 		left: 100px;
+// 		font-size: 28px;
+// 	}
+// }

@@ -1,0 +1,50 @@
+html, body {
+	font-family: 'Open Sans', sans-serif;
+}
+.disabled {
+  pointer-events: none;
+  cursor: auto;
+}
+#wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+  right: 0;
+  margin: 0 auto;
+	width: 1024px;
+	height: 672px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+  overflow: hidden;
+  transform: translate(0, 0) scale(1);
+}
+#svg_right_shape {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 128px;
+	height: 672px;
+  z-index: 0;
+}
+#headingWrapper {
+	position: absolute;
+	top: 60px;
+  left: 50px;
+	width: 50%;
+	z-index: 1;
+}
+
+#headingWrapper #heading p {
+	font-size: 24px;
+	line-height: 120%;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
